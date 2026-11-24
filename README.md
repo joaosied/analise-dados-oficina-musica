@@ -4,12 +4,6 @@ Grupo: Cesar, Eduardo, Gabriel Turra e João
 
 Trabalho do 2º bimestre de Análise de Dados Governamentais Abertos (UniBrasil).
 
-Equipe:
-Cesar
-Eduardo
-Gabriel Turra
-Joao
-
 A base é uma planilha com os cursos da 43ª Oficina de Música de Curitiba (114 linhas e 14 colunas). O projeto tem duas partes: um script que trata a planilha (`etl.py`) e um dashboard que mostra gráficos em cima dos dados tratados (`dashboard.py`). O relatório técnico completo está em `relatorio/`.
 
 ## O que tem no repositório
