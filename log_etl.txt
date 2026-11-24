@@ -1,0 +1,74 @@
+1. LEITURA
+Linhas lidas: 115
+Linhas sem a linha de tracos: 114
+
+2. LIMPEZA DE TEXTO
+Espacos extras removidos, colunas renomeadas e '&BULL,' trocado por '-' nas ementas
+
+3. TIPAGEM
+Tipos das colunas:
+id_curso                    int64
+titulo_original               str
+ofi_codigo                  int64
+nucleo_codigo               int64
+tipo_codigo                 int64
+esp_codigo                  int64
+ementa                        str
+requisitos                    str
+valor                     float64
+tem_selecao                  bool
+publicado                    bool
+data_cadastro      datetime64[us]
+data_publicacao    datetime64[us]
+exige_video                  bool
+
+4. DUPLICADOS
+Linhas duplicadas: 0
+IDs repetidos: 0
+Titulos repetidos: 0
+
+5. VALORES NULOS
+Nulos antes do tratamento:
+valor              63
+data_publicacao     7
+valor: 63 nulos preenchidos com 0 (gratuito)
+data_publicacao: 7 nulos mantidos e marcados
+
+6. FILTROS
+Linhas antes dos filtros: 114
+Depois de filtrar publicados: 114
+Removidos por nao serem de musica:
+  1794 - Visita guiada à Pirâmide Solar de Curitiba | Carlos Guillen
+  1795 - Oficina Teórica e Prática de Plantio de Árvores | SMMA
+  1796 - Aula de Equilíbrio Sobre Bicicleta | Fernando Rosenbaum
+  1797 - Oficina Conhecendo as Abelhas Sem Ferrão | Raoni Duarte
+  1798 - Visita Guiada à Fazenda Urbana CIC | Gabriel Ollé Dalmazo
+  1799 - Visita Guiada à Escola Municipal de Sustentabilidade - Bosque Zaninelli | Clarice Doroncinski
+  1800 - Oficina para crianças: Um Estudo Sobre a História do Jardim Botânico e a Preservação do Meio Ambiente
+  1801 - Oficina Implantação expressa e coletiva de um mini jardim urbano, no coração histórico de nossa QUERITIBA!
+  1802 - Oficina de Minijardim: Crie o seu Próprio Mundo Verde | Iracema Bernardes
+  1803 - Feira de Troca Lixo Zero | Com Coletivo Lixo Zero
+Linhas depois dos filtros: 104
+
+7. NORMALIZACAO ESTRUTURAL
+Coluna removida: ofi_codigo (valores unicos: 1)
+Coluna removida: publicado (valores unicos: 1)
+Coluna removida: requisitos (valores unicos: 4)
+Cursos por modalidade:
+modalidade
+Curso                65
+Prática              15
+Colônia de férias     8
+Workshop              4
+Oficina               4
+Regência              4
+Palestra              2
+Estágio               2
+
+8. RESULTADO FINAL
+Linhas: 104 | Colunas: 19
+Nulos que sobraram:
+data_publicacao      7
+dias_ate_publicar    7
+
+Arquivo salvo em dados/dados_tratados.csv
